@@ -1,0 +1,209 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>add</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content color="dark">
+    <h1><b><i> La'Cafe Coffee </i></b></h1> 
+    <h6>coffee ordering app at your finger tips..</h6>
+    <h2 text-right><ion-icon  style="zoom:1.0;" name="arrow-round-forward" (click)="done()"></ion-icon><ion-label (click)="done()"> R {{finalAmount}}.00 </ion-label></h2>
+
+<ion-card>
+    <h3>Espresso<img src="/assets/esp2.jpg"></h3>
+    <ion-label><h6>One shot of espresso straight for R 15.00</h6></ion-label>
+    
+ <!-- ============================================== -->
+  <ion-item>
+      <ion-icon style="zoom:1.2;" (click)="minus1()" name="remove"></ion-icon>
+      <h4>{{numEspresso}}</h4>
+      <ion-icon style="zoom:1.2;"  (click)="add1()" name="add"></ion-icon>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+    <h4 text-right>R {{amtEspresso}}.00</h4>
+      </ion-item>
+      <p><b>Toppings</b></p>
+                         
+    <ion-item>
+    <ion-label>Cream</ion-label>
+      <!-- <ion-radio slot="start" value="cream"></ion-radio> -->
+      <ion-icon style="zoom:0.5;" (click)="minus1Cream()" name="remove"></ion-icon>
+      <h6>{{numCream}}</h6>
+      <ion-icon style="zoom:0.5;"  (click)="add1Cream()" name="add"></ion-icon>
+      </ion-item>
+      <ion-item>
+      <ion-label>Chocolate</ion-label>
+        <!-- <ion-radio slot="start" value="cream"></ion-radio> -->
+        <ion-icon style="zoom:0.5;" (click)="minus1Chocolate()" name="remove"></ion-icon>
+      <h6>{{numChocolate}}</h6>
+      <ion-icon style="zoom:0.5;"  (click)="add1Chocolate()" name="add"></ion-icon>
+        </ion-item>
+  <!-- ============================================== -->
+  </ion-card>
+  <ion-card>
+    <h3>Caffe Americano
+<img src="/assets/ame.jpg"></h3>
+<h6>Shots of espresso and filtered hot water for R 25.00</h6>
+     <!-- ============================================== -->
+     <ion-item>
+        <ion-icon style="zoom:1.2;" (click)="minus2()" name="remove"></ion-icon>
+        <h4>{{numCaffeAmericano}}</h4>
+        <ion-icon style="zoom:1.2;"   (click)="add2()" name="add"></ion-icon>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     
+       <h4 text-right>R {{amtCaffeAmericano}}.00</h4>
+        </ion-item>
+         <p><b>Toppings</b></p>
+                           
+         <ion-item>
+            <ion-label>Cream</ion-label>
+              <!-- <ion-radio slot="start" value="cream"></ion-radio> -->
+              <ion-icon style="zoom:0.5;" (click)="minus2Cream()" name="remove"></ion-icon>
+              <h6>{{num2Cream}}</h6>
+              <ion-icon style="zoom:0.5;"  (click)="add2Cream()" name="add"></ion-icon>
+              </ion-item>
+              <ion-item>
+              <ion-label>Chocolate</ion-label>
+                <!-- <ion-radio slot="start" value="cream"></ion-radio> -->
+                <ion-icon style="zoom:0.5;" (click)="minus2Chocolate()" name="remove"></ion-icon>
+              <h6>{{num2Chocolate}}</h6>
+              <ion-icon style="zoom:0.5;"  (click)="add2Chocolate()" name="add"></ion-icon>
+                </ion-item>
+      <!-- ============================================== -->
+</ion-card>
+<ion-card>
+    <h3>Latte Macchiato
+        <img src="/assets/lat.jpg"></h3>
+<h6>Foamed milk marked with shots of espresso for R 20.00</h6>
+     <!-- ============================================== -->
+     <ion-item>
+        <ion-icon style="zoom:1.2;" (click)="minus3()" name="remove"></ion-icon>
+        <h4>{{numLatteMacchiato}}</h4>
+        <ion-icon style="zoom:1.2;"   (click)="add3()" name="add"></ion-icon>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     
+       <h4 text-right>R {{amtLatteMacchiato}}.00</h4>
+        </ion-item>
+         <p><b>Toppings</b></p>
+                           
+         <ion-item>
+            <ion-label>Cream</ion-label>
+              <!-- <ion-radio slot="start" value="cream"></ion-radio> -->
+              <ion-icon style="zoom:0.5;" (click)="minus3Cream()" name="remove"></ion-icon>
+              <h6>{{num3Cream}}</h6>
+              <ion-icon style="zoom:0.5;"  (click)="add3Cream()" name="add"></ion-icon>
+              </ion-item>
+              <ion-item>
+              <ion-label>Chocolate</ion-label>
+                <!-- <ion-radio slot="start" value="cream"></ion-radio> -->
+                <ion-icon style="zoom:0.5;" (click)="minus3Chocolate()" name="remove"></ion-icon>
+              <h6>{{num3Chocolate}}</h6>
+              <ion-icon style="zoom:0.5;"  (click)="add3Chocolate()" name="add"></ion-icon>
+                </ion-item>
+      <!-- ============================================== -->
+</ion-card>
+<ion-card>
+    <h3>Flat White
+        <img src="/assets/images3.jpg"></h3>
+<h6>Espresso shots finished with steamed whole milk for R 25.00</h6>
+     <!-- ============================================== -->
+     <ion-item>
+        <ion-icon style="zoom:1.2;" (click)="minus4()" name="remove"></ion-icon>
+        <h4>{{numFlatWhite}}</h4>
+        <ion-icon style="zoom:1.2;"   (click)="add4()" name="add"></ion-icon>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     
+       <h4 text-right>R {{amtFlatWhite}}.00</h4>
+        </ion-item>
+         <p><b>Toppings</b></p>
+                           
+         <ion-item>
+            <ion-label>Cream</ion-label>
+              <!-- <ion-radio slot="start" value="cream"></ion-radio> -->
+              <ion-icon style="zoom:0.5;" (click)="minus4Cream()" name="remove"></ion-icon>
+              <h6>{{num4Cream}}</h6>
+              <ion-icon style="zoom:0.5;"  (click)="add4Cream()" name="add"></ion-icon>
+              </ion-item>
+              <ion-item>
+              <ion-label>Chocolate</ion-label>
+                <!-- <ion-radio slot="start" value="cream"></ion-radio> -->
+                <ion-icon style="zoom:0.5;" (click)="minus4Chocolate()" name="remove"></ion-icon>
+              <h6>{{num4Chocolate}}</h6>
+              <ion-icon style="zoom:0.5;"  (click)="add4Chocolate()" name="add"></ion-icon>
+                </ion-item>
+      <!-- ============================================== -->
+</ion-card>
+<ion-card>
+    <h3>Cappuccino<img src="/assets/images2.jpg"></h3>
+<h6>A shot of espresso topped with a deep layer of foamed milk for R 17.00</h6>
+     <!-- ============================================== -->
+     <ion-item>
+        <ion-icon style="zoom:1.2;" (click)="minus5()" name="remove"></ion-icon>
+        <h4>{{numCappuccino}}</h4>
+        <ion-icon style="zoom:1.2;"   (click)="add5()" name="add"></ion-icon>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     
+       <h4 text-right>R {{amtCappuccino}}.00</h4>
+        </ion-item>
+         <p><b>Toppings</b></p>
+                           
+         <ion-item>
+            <ion-label>Cream</ion-label>
+              <!-- <ion-radio slot="start" value="cream"></ion-radio> -->
+              <ion-icon style="zoom:0.5;" (click)="minus5Cream()" name="remove"></ion-icon>
+              <h6>{{num5Cream}}</h6>
+              <ion-icon style="zoom:0.5;"  (click)="add5Cream()" name="add"></ion-icon>
+              </ion-item>
+              <ion-item>
+              <ion-label>Chocolate</ion-label>
+                <!-- <ion-radio slot="start" value="cream"></ion-radio> -->
+                <ion-icon style="zoom:0.5;" (click)="minus5Chocolate()" name="remove"></ion-icon>
+              <h6>{{num5Chocolate}}</h6>
+              <ion-icon style="zoom:0.5;"  (click)="add5Chocolate()" name="add"></ion-icon>
+                </ion-item>
+      <!-- ============================================== -->
+</ion-card>
+<ion-card>
+    <h3>Caffe Latte
+<img src="/assets/cafe.jpg"></h3>
+<h6>A shot of espresso in steamed milk lightly topped with foam for R 30.00</h6>
+   <!-- ============================================== -->
+   <ion-item>
+      <ion-icon style="zoom:1.2;" (click)="minus6()" name="remove"></ion-icon>
+      <h4>{{numCaffeLatte}}</h4>
+      <ion-icon style="zoom:1.2;"   (click)="add6()" name="add"></ion-icon>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   
+     <h4 text-right>R {{amtCaffeLatte}}.00</h4>
+      </ion-item>
+       <p><b>Toppings</b></p>
+                         
+       <ion-item>
+          <ion-label>Cream</ion-label>
+            <!-- <ion-radio slot="start" value="cream"></ion-radio> -->
+            <ion-icon style="zoom:0.5;" (click)="minus6Cream()" name="remove"></ion-icon>
+            <h6>{{num6Cream}}</h6>
+            <ion-icon style="zoom:0.5;"  (click)="add6Cream()" name="add"></ion-icon>
+            </ion-item>
+            <ion-item>
+            <ion-label>Chocolate</ion-label>
+              <!-- <ion-radio slot="start" value="cream"></ion-radio> -->
+              <ion-icon style="zoom:0.5;" (click)="minus6Chocolate()" name="remove"></ion-icon>
+            <h6>{{num6Chocolate}}</h6>
+            <ion-icon style="zoom:0.5;"  (click)="add6Chocolate()" name="add"></ion-icon>
+              </ion-item>
+    <!-- ============================================== -->
+</ion-card>
+</ion-content>

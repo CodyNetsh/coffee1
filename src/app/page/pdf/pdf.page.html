@@ -1,0 +1,35 @@
+
+
+   
+        <ion-content padding color="warning">
+
+            <h1><b><i> La'Cafe Coffee </i></b></h1> 
+            <h6>coffee ordering app at your finger tips..</h6>
+            <br> <h5><u>Coffee List &nbsp; ... &nbsp;  &nbsp;&nbsp; Price</u></h5> <br>
+            <h5>{{numEspresso1}} {{txt1}}</h5>
+            <h6>{{c1}}</h6>
+            <h5>{{numCaffeAmericano1}} {{txt2}}</h5>
+            <h6>{{c2}}</h6>
+             <h5>{{numLatteMacchiato1}} {{txt3}}</h5>
+             <h6>{{c3}}</h6>
+             <h5>{{numFlatWhite1}} {{txt4}}</h5>
+             <h6>{{c4}}</h6>
+             <h5>{{numCappuccino1}} {{txt5}}</h5>
+             <h6>{{c5}}</h6>
+             <h5>{{numCaffeLatte1}} {{txt6}}</h5>
+             <h6>{{c6}}</h6>
+             
+          <br><br><br> 
+          <h2>Total Amount: R {{finalAmount}}.00</h2>
+        <!-- <div class="wrapper"> -->
+        <!-- <ion-button color="medium" (click)="change()" >Make Order Changes</ion-button> -->
+        <h6>  <ion-icon  style="zoom:2.0;" name="arrow-round-back" (click)="change()" ></ion-icon></h6>
+        <h6><ion-label (click)="change()">Make Order Changes</ion-label></h6>
+
+        <!-- <ion-button color="danger" (click)="makePdf()" >Generate PDF</ion-button> -->
+       
+        <!-- <ion-button color="danger" (click)="print()" >print PDF</ion-button> -->
+        <h6>print PDF<ion-icon name="download" style="zoom:1.5;" (click)="print()" ></ion-icon></h6>
+        <!-- </div> -->
+        </ion-content>
+

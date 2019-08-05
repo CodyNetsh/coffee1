@@ -1,0 +1,33 @@
+
+// .h2{
+// // --background: url('../home/images7.jpg') 0 0/100% 50% no-repeat;
+// // //top:40%;
+// text-align: center;
+// -webkit-text-fill-size: 2.6rem;
+//     -webkit-text-fill-color: #3b3302;
+//     -webkit-text-stroke-width: 0.5px;
+//     -webkit-text-stroke-color:#0a0b0c;
+    
+// }
+.center{
+    h1{
+        font-size: 3.6rem;
+        position: relative;
+    }
+    h6{
+        position: relative;
+    }
+    // -webkit-text-fill-width: 50000px;
+    -webkit-text-fill-color: #3b3302;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color:#0a0b0c;
+    text-align: center;
+
+}
+.background-image{
+    --background: url('../home/rain.jpg') 0 0/100% 60% no-repeat;
+    text-align: center;
+        -webkit-text-fill-color: #3b3302;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color:#0a0b0c;
+}
