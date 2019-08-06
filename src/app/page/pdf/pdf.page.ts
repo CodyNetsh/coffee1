@@ -31,6 +31,7 @@ numLatteMacchiato1;
 numFlatWhite1;
 numCappuccino1;
 numCaffeLatte1;
+
   constructor(private route:ActivatedRoute,private router:Router){}
     // public navCtrl: NavController, public file: File ,public toastCtrl: ToastController) { }
 
@@ -103,7 +104,25 @@ change(){
     numLatteMacchiato1:this.numLatteMacchiato1,numCaffeAmericano1:this.numCaffeAmericano1,numEspresso1:this.numEspresso1} });
    
 }
+payments(){
+  console.log(this.finalAmount,this.exCaffeLatte,this.totCaffeLatte,this.amtCaffeLatte,
+    this.exCappuccino, this.totCappuccino,  this.amtCappuccino,this.exFlatWhite, this.totFlatWhite,
+    this.amtFlatWhite, this.exLatteMacchiato, this.totLatteMacchiato, this.amtLatteMacchiato,
+    this.exCaffeAmericano,this.totCaffeAmericano, this.amtCaffeAmericano, this.exEspresso,
+    this.totEspresso ,this.amtEspresso,this.txt1,this.txt2,this.txt3,this.txt4,this.txt5,this.txt6,this.c1,
+    this.c2,this.c3,this.c4 ,this.c5,this.c6,this.numCaffeLatte1,this.numCappuccino1,this.numFlatWhite1,
+    this.numLatteMacchiato1,this.numCaffeAmericano1,this.numEspresso1);
 
+  this.router.navigate(['/payments'], { queryParams:{ finalAmount:this.finalAmount,exCaffeLatte:this.exCaffeLatte,totCaffeLatte:this.totCaffeLatte,amtCaffeLatte:this.amtCaffeLatte,
+    exCappuccino:this.exCappuccino, totCappuccino:this.totCappuccino,  amtCappuccino:this.amtCappuccino,exFlatWhite:this.exFlatWhite, totFlatWhite:this.totFlatWhite,
+    amtFlatWhite:this.amtFlatWhite, exLatteMacchiato:this.exLatteMacchiato, totLatteMacchiato:this.totLatteMacchiato, amtLatteMacchiato:this.amtLatteMacchiato,
+    exCaffeAmericano:this.exCaffeAmericano,totCaffeAmericano:this.totCaffeAmericano, amtCaffeAmericano:this.amtCaffeAmericano, exEspresso:this.exEspresso,
+    totEspresso:this.totEspresso ,amtEspresso:this.amtEspresso,txt1:this.txt1,txt2:this.txt2,txt3:this.txt3,txt4:this.txt4,txt5:this.txt5,txt6:this.txt6,c1:this.c1,
+    c2:this.c2,c3:this.c3,c4:this.c4 ,c5:this.c5,c6:this.c6,
+    numCaffeLatte1:this.numCaffeLatte1,numCappuccino1:this.numCappuccino1,numFlatWhite1:this.numFlatWhite1,
+    numLatteMacchiato1:this.numLatteMacchiato1,numCaffeAmericano1:this.numCaffeAmericano1,numEspresso1:this.numEspresso1} });
+
+}
   makePdf(){
     pdfmake.vfs = pdfFonts.pdfMake.vfs;
     var docDefinition = {

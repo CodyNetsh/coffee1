@@ -5,7 +5,7 @@
 
             <h1><b><i> La'Cafe Coffee </i></b></h1> 
             <h6>coffee ordering app at your finger tips..</h6>
-            <br> <h5><u>Coffee List &nbsp; ... &nbsp;  &nbsp;&nbsp; Price</u></h5> <br>
+            <br> <h5><u>Coffee Order</u></h5> <br>
             <h5>{{numEspresso1}} {{txt1}}</h5>
             <h6>{{c1}}</h6>
             <h5>{{numCaffeAmericano1}} {{txt2}}</h5>
@@ -19,7 +19,7 @@
              <h5>{{numCaffeLatte1}} {{txt6}}</h5>
              <h6>{{c6}}</h6>
              
-          <br><br><br> 
+          <br><br>
           <h2>Total Amount: R {{finalAmount}}.00</h2>
         <!-- <div class="wrapper"> -->
         <!-- <ion-button color="medium" (click)="change()" >Make Order Changes</ion-button> -->
@@ -28,8 +28,10 @@
 
         <!-- <ion-button color="danger" (click)="makePdf()" >Generate PDF</ion-button> -->
        
-        <!-- <ion-button color="danger" (click)="print()" >print PDF</ion-button> -->
         <h6>print PDF<ion-icon name="download" style="zoom:1.5;" (click)="print()" ></ion-icon></h6>
         <!-- </div> -->
+        <br><br>
+        <h6><ion-button size="small" style="align-content: center;" color="danger" (click)="payments()" >Online Payments</ion-button></h6>
+
         </ion-content>
 

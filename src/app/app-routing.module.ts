@@ -8,9 +8,9 @@ const routes: Routes = [
   { path: 'order', loadChildren: './page/order/order.module#OrderPageModule' },
   { path: 'add', loadChildren: './page/add/add.module#AddPageModule' },
   { path: 'pdf', loadChildren: './page/pdf/pdf.module#PdfPageModule' },
-  { path: 'confirm', loadChildren: './page/confirm/confirm.module#ConfirmPageModule' },
   { path: 'payments', loadChildren: './page/payments/payments.module#PaymentsPageModule' },
   { path: 'recipt', loadChildren: './page/recipt/recipt.module#ReciptPageModule' },
+  { path: 'confirm', loadChildren: './page/confirm/confirm.module#ConfirmPageModule' },
 ];
 
 @NgModule({
